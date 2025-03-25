@@ -1,22 +1,31 @@
-import { BsBarChartFill, BsFillStarFill } from "react-icons/bs";
-import { PiGlobeFill } from "react-icons/pi";
+import React from 'react';
+import { FiActivity, FiUsers, FiAward, FiCalendar } from 'react-icons/fi';
 
-import { IStats } from "@/types";
+interface Stat {
+    title: string;
+    value: string;
+    icon: JSX.Element;
+}
 
-export const stats: IStats[] = [
+export const stats: Stat[] = [
     {
-        title: "20M+",
-        icon: <BsBarChartFill size={34} className="text-blue-500" />,
-        description: "Transactions processed securely every day, providing real-time insights."
+        title: 'Active Players',
+        value: '10,000+',
+        icon: <FiUsers size={24} />
     },
     {
-        title: "5.0",
-        icon: <BsFillStarFill size={34} className="text-yellow-500" />,
-        description: "Star rating, consistently maintained across app stores."
+        title: 'Games Tracked',
+        value: '500,000+',
+        icon: <FiActivity size={24} />
     },
     {
-        title: "200+ ",
-        icon: <PiGlobeFill size={34} className="text-green-600" />,
-        description: "Financial Institutions, seamlessly integrated, so you can manage all accounts."
+        title: 'Win Streaks',
+        value: '25,000+',
+        icon: <FiAward size={24} />
+    },
+    {
+        title: 'Playing Days',
+        value: '100,000+',
+        icon: <FiCalendar size={24} />
     }
-];
+]

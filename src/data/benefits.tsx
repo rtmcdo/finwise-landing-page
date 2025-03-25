@@ -1,72 +1,73 @@
-import { FiBarChart2, FiBriefcase, FiDollarSign, FiLock, FiPieChart, FiShield, FiTarget, FiTrendingUp, FiUser } from "react-icons/fi";
+import React from 'react';
+import { FiBook, FiCalendar, FiCamera, FiBarChart2 as FiChart, FiClock, FiHeart, FiTrendingUp, FiUsers, FiBox, FiTag, FiList, FiRotateCw } from "react-icons/fi";
 
-import { IBenefit } from "@/types"
+import { IBenefit } from "../types"
 
 export const benefits: IBenefit[] = [
     {
-        title: "Smart Budgeting",
-        description: "Take the guesswork out of managing your money. Our AI-powered budgeting tool adapts to your lifestyle and helps you stay on track.",
+        title: "Your Game, Documented.",
+        description: "Log every drill, match, and win. Record reflections, partner performance, games played, and new people you've met—all with photos, videos, and smart tagging.",
         bullets: [
             {
-                title: "Intelligent Categorization",
-                description: "Automatically sorts your transactions for crystal-clear insights.",
-                icon: <FiBarChart2 size={26} />
+                title: "Win/Loss Tracking",
+                description: "Track your performance by session and over time.",
+                icon: <FiBook size={26} />
             },
             {
-                title: "Customizable Goals",
-                description: "Set and track financial objectives that matter to you.",
-                icon: <FiTarget size={26} />
+                title: "Photo & Note Taking",
+                description: "Add photos and detailed notes to each session.",
+                icon: <FiCamera size={26} />
             },
             {
-                title: "Predictive Analysis",
-                description: "Get ahead of your finances with spending forecasts and alerts.",
+                title: "Partner Tracking",
+                description: "Keep track of who you play with and how you perform together.",
+                icon: <FiUsers size={26} />
+            }
+        ],
+        imageSrc: "/screenshots/6F2F6E2F-C743-4D21-9CB9-A5418E92CF40_4_5005_c.jpeg"
+    },
+    {
+        title: "Understand Your Progress.",
+        description: "Visualize your play habits with a heatmap. Monitor win streaks, busiest days, and activity levels over time.",
+        bullets: [
+            {
+                title: "Activity Heatmap",
+                description: "See your activity patterns across 12 months.",
+                icon: <FiCalendar size={26} />
+            },
+            {
+                title: "Streak Tracking",
+                description: "Monitor your consistency and win streaks.",
                 icon: <FiTrendingUp size={26} />
+            },
+            {
+                title: "Daily Activity Levels",
+                description: "Track your playing frequency and intensity.",
+                icon: <FiChart size={26} />
             }
         ],
-        imageSrc: "/images/mockup-1.webp"
+        imageSrc: "/screenshots/C5E3363B-0DBA-4C67-BBE2-87EC2700DF17_4_5005_c.jpeg"
     },
     {
-        title: "Seamless Investing",
-        description: "Start building wealth today, no financial degree required. Finwise makes investing accessible and straightforward.",
+        title: "Track Your Gear.",
+        description: "Log paddles, shoes, balls, and gear purchases. Stay on top of what's active, retired, or replaced.",
         bullets: [
             {
-                title: "Micro-Investing",
-                description: "Begin with as little as $1 and watch your money grow.",
-                icon: <FiDollarSign size={26} />
+                title: "Gear Categories",
+                description: "Sort and organize all your equipment by type.",
+                icon: <FiBox size={26} />
             },
             {
-                title: "Expert Portfolios",
-                description: "Choose from investment strategies tailored to your risk tolerance.",
-                icon: <FiBriefcase size={26} />
+                title: "Purchase History",
+                description: "Track when you bought each piece of gear.",
+                icon: <FiTag size={26} />
             },
             {
-                title: "Real-Time Performance",
-                description: "Track your investments with easy-to-understand metrics and visuals.",
-                icon: <FiPieChart size={26} />
+                title: "Usage Tracking",
+                description: "Monitor how long you've used each paddle.",
+                icon: <FiRotateCw size={26} />
             }
         ],
-        imageSrc: "/images/mockup-2.webp"
-    },
-    {
-        title: "Bank-Grade Security",
-        description: "Your financial data deserves the best protection. Rest easy knowing Finwise employs cutting-edge security measures.",
-        bullets: [
-            {
-                title: "Military-Grade Encryption",
-                description: "Your information is safeguarded with the highest level of encryption.",
-                icon: <FiLock size={26} />
-            },
-            {
-                title: "Biometric Authentication",
-                description: "Access your account securely with fingerprint or facial recognition.",
-                icon: <FiUser size={26} />
-            },
-            {
-                title: "Real-Time Fraud Detection",
-                description: "Our system constantly monitors for suspicious activity to keep your money safe.",
-                icon: <FiShield size={26} />
-            }
-        ],
-        imageSrc: "/images/mockup-1.webp"
+        imageSrc: "/screenshots/CC098B95-EA43-4265-BA42-186CCBEC3522_4_5005_c.jpeg"
     },
 ]

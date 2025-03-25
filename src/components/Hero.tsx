@@ -5,6 +5,8 @@ import AppStoreButton from './AppStoreButton';
 import PlayStoreButton from './PlayStoreButton';
 
 import { heroDetails } from '@/data/hero';
+import spendingScreen from '../screenshots/phone-hero1.png';
+import watchScreen from '../screenshots/watch-hero-1.png';
 
 const Hero: React.FC = () => {
     return (
@@ -27,17 +29,30 @@ const Hero: React.FC = () => {
                     <AppStoreButton dark />
                     <PlayStoreButton dark />
                 </div>
-                <Image
-                    src={heroDetails.centerImageSrc}
-                    width={384}
-                    height={340}
-                    quality={100}
-                    sizes="(max-width: 768px) 100vw, 384px"
-                    priority={true}
-                    unoptimized={true}
-                    alt="app mockup"
-                    className='relative mt-12 md:mt-16 mx-auto z-10'
-                />
+                <div className="relative mt-12 md:mt-16 flex items-center justify-center gap-4 md:gap-8">
+                    <div className="relative w-[300px] md:w-[384px] h-[400px] overflow-hidden">
+                        <Image
+                            src={spendingScreen}
+                            fill
+                            style={{ objectFit: "cover", objectPosition: "top" }}
+                            quality={100}
+                            priority={true}
+                            alt="Spending screen"
+                            className="z-10"
+                        />
+                    </div>
+                    <div className="relative w-[150px] md:w-[200px] aspect-square hidden md:block">
+                        <Image
+                            src={watchScreen}
+                            fill
+                            style={{ objectFit: "contain" }}
+                            quality={100}
+                            priority={true}
+                            alt="Watch app"
+                            className="z-10"
+                        />
+                    </div>
+                </div>
             </div>
         </section>
     );

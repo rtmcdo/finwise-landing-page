@@ -1,16 +1,27 @@
-import { IMenuItem } from "@/types";
+interface MenuItem {
+    text: string;
+    url: string;
+}
 
-export const menuItems: IMenuItem[] = [
+export const menuItems: MenuItem[] = [
     {
-        text: "Features",
-        url: "#features"
+        text: 'Features',
+        url: '#features'
     },
     {
-        text: "Pricing",
-        url: "#pricing"
+        text: 'Journal',
+        url: '#journal'
     },
     {
-        text: "Testimonials",
-        url: "#testimonials"
+        text: 'Analytics',
+        url: '#analytics'
+    },
+    {
+        text: 'Equipment',
+        url: '#equipment'
+    },
+    {
+        text: 'Get Started',
+        url: '#cta'
     }
 ];

@@ -1,12 +1,12 @@
 export const siteDetails = {
-    siteName: 'Finwise',
-    siteUrl: 'https://finwise-omega.vercel.app/',
+    siteName: 'Pickleball Journal',
+    siteUrl: 'https://pickleballjournal.com/',
     metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+        title: 'Pickleball Journal - Track Your Progress, Improve Your Game',
+        description: 'From match stats to partner performance, track your entire pickleball journey in one app. Log games, analyze trends, and manage your equipment.',
     },
     language: 'en-us',
     locale: 'en-US',
-    siteLogo: `${process.env.BASE_PATH || ''}/images/logo.png`, // or use a string for the logo e.g. "TechStartup"
-    googleAnalyticsId: '', // e.g. G-XXXXXXX,
+    siteLogo: 'Pickleball Journal', // Using text logo for now
+    googleAnalyticsId: '', // Add your GA ID when ready
 }

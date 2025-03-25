@@ -3,7 +3,7 @@ import React from 'react';
 import { FaFingerprint } from 'react-icons/fa';
 
 import { siteDetails } from '@/data/siteDetails';
-import { footerDetails } from '@/data/footer';
+import { footerData } from '@/data/footer';
 import { getPlatformIconByName } from '@/utils';
 
 const Footer: React.FC = () => {
@@ -18,43 +18,47 @@ const Footer: React.FC = () => {
                         </h3>
                     </Link>
                     <p className="mt-3.5 text-foreground-accent">
-                        {footerDetails.subheading}
+                        Track your pickleball journey with detailed stats and insights
                     </p>
                 </div>
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul className="text-foreground-accent">
-                        {footerDetails.quickLinks.map(link => (
-                            <li key={link.text} className="mb-2">
-                                <Link href={link.url} className="hover:text-foreground">{link.text}</Link>
-                            </li>
+                    <div className="grid grid-cols-1 gap-6">
+                        {footerData?.mainLinks?.map((section) => (
+                            <div key={section.title}>
+                                <h5 className="font-medium mb-2">{section.title}</h5>
+                                <ul className="text-foreground-accent">
+                                    {section.links?.map(link => (
+                                        <li key={link.text} className="mb-2">
+                                            <Link href={link.url || '#'} className="hover:text-foreground">
+                                                {link.text}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 </div>
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
 
-                    {footerDetails.email && <a href={`mailto:${footerDetails.email}`}  className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</a>}
+                    <a href="mailto:support@pickleballjournal.com" className="block text-foreground-accent hover:text-foreground">
+                        Email: support@pickleballjournal.com
+                    </a>
 
-                    {footerDetails.telephone && <a href={`tel:${footerDetails.telephone}`} className="block text-foreground-accent hover:text-foreground">Phone: {footerDetails.telephone}</a>}
-
-                    {footerDetails.socials && (
-                        <div className="mt-5 flex items-center gap-5 flex-wrap">
-                            {Object.keys(footerDetails.socials).map(platformName => {
-                                if (platformName && footerDetails.socials[platformName]) {
-                                    return (
-                                        <Link
-                                            href={footerDetails.socials[platformName]}
-                                            key={platformName}
-                                            aria-label={platformName}
-                                        >
-                                            {getPlatformIconByName(platformName)}
-                                        </Link>
-                                    )
-                                }
-                            })}
-                        </div>
-                    )}
+                    <div className="mt-5 flex items-center gap-4">
+                        {footerData?.socialLinks?.map(({ platform, url }) => (
+                            <Link
+                                href={url || '#'}
+                                key={platform}
+                                aria-label={platform}
+                                className="text-foreground-accent hover:text-foreground"
+                            >
+                                {getPlatformIconByName(platform)}
+                            </Link>
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="mt-8 md:text-center text-foreground-accent px-6">

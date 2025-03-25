@@ -1,6 +1,10 @@
-export const ctaDetails = {
-    heading: 'Join Over 1 Million Users To Transform Your Finances',
-    subheading: 'Your journey to financial freedom starts here. Download Finwise today and take the first step towards a brighter financial future!',
+export const ctaData = {
+    heading: 'Join thousands of players tracking their pickleball journey.',
+    description: 'Take your game to the next level.',
+    primaryCTA: {
+        text: 'Start Logging Today',
+        href: '#'
+    },
     appStoreUrl: '#',
-    googlePlayUrl: '#'
+    playStoreUrl: '#'
 }

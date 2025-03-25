@@ -1,37 +1,63 @@
-import { IMenuItem, ISocials } from "@/types";
+interface FooterLink {
+    text: string;
+    url: string;
+}
 
-export const footerDetails: {
-    subheading: string;
-    quickLinks: IMenuItem[];
-    email: string;
-    telephone: string;
-    socials: ISocials;
-} = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
-    quickLinks: [
+interface FooterSection {
+    title: string;
+    links: FooterLink[];
+}
+
+interface SocialLink {
+    platform: string;
+    url: string;
+}
+
+export const footerData = {
+    mainLinks: [
         {
-            text: "Features",
-            url: "#features"
+            title: 'Features',
+            links: [
+                {
+                    text: "Journal Entries",
+                    url: "#journal"
+                },
+                {
+                    text: "Activity Analytics",
+                    url: "#analytics"
+                },
+                {
+                    text: "Equipment Management",
+                    url: "#equipment"
+                }
+            ]
         },
         {
-            text: "Pricing",
-            url: "#pricing"
-        },
-        {
-            text: "Testimonials",
-            url: "#testimonials"
+            title: 'Resources',
+            links: [
+                {
+                    text: "Help Center",
+                    url: "#"
+                },
+                {
+                    text: "Privacy Policy",
+                    url: "#"
+                },
+                {
+                    text: "Terms of Service",
+                    url: "#"
+                }
+            ]
         }
-    ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
-    socials: {
-        // github: 'https://github.com',
-        // x: 'https://twitter.com/x',
-        twitter: 'https://twitter.com/Twitter',
-        facebook: 'https://facebook.com',
-        // youtube: 'https://youtube.com',
-        linkedin: 'https://www.linkedin.com',
-        // threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
-    }
+    ] as FooterSection[],
+    socialLinks: [
+        {
+            platform: "twitter",
+            url: "https://twitter.com/pickleballjournal"
+        },
+        {
+            platform: "instagram",
+            url: "https://instagram.com/pickleballjournal"
+        }
+    ] as SocialLink[]
 }
