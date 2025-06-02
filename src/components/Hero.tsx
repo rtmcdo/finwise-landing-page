@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 import AppStoreButton from './AppStoreButton';
 import { heroDetails } from '@/data/hero';
-import spendingScreen from '../screenshots/phone-hero1.png';
 import watchScreen from '../screenshots/watch-hero-1.png';
 
 const Hero: React.FC = () => {
@@ -31,12 +30,12 @@ const Hero: React.FC = () => {
                 <div className="relative mt-12 md:mt-16 flex items-center justify-center gap-4 md:gap-8">
                     <div className="relative w-[300px] md:w-[384px] h-[400px] overflow-hidden">
                         <Image
-                            src={spendingScreen}
+                            src="/images/content-view.png"
                             fill
                             style={{ objectFit: "cover", objectPosition: "top" }}
                             quality={100}
                             priority={true}
-                            alt="Spending screen"
+                            alt="Pickleball Journal App"
                             className="z-10"
                         />
                     </div>

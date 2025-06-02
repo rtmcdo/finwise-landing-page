@@ -17,19 +17,22 @@ const HomePage: React.FC = () => {
       <Container>
         <Benefits />
 
-        <Section
+        {/* <Section
           id="testimonials"
           title="Hear From Fellow Players"
           description="Real pickleball enthusiasts sharing their experience with the app."
         >
           <Testimonials />
-        </Section>
+        </Section> */}
+      </Container>
 
+      {/* Visual break between Benefits and FAQ - spans full page width */}
+      <div className="w-full h-16 bg-gray-200 my-16"></div>
+
+      <Container>
         <FAQ />
-
-        <Stats />
         
-        <CTA />
+        {/* <CTA /> */}
       </Container>
     </>
   );

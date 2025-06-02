@@ -3,7 +3,7 @@ import BenefitSection from "./BenefitSection"
 import { benefits } from "@/data/benefits"
 
 // Section IDs that match our navigation
-const sectionIds = ['journal', 'analytics', 'equipment', 'expenses', 'resources'];
+const sectionIds = ['journal', 'game-tracking', 'analytics', 'equipment', 'expenses', 'resources'];
 
 const Benefits: React.FC = () => {
     return (

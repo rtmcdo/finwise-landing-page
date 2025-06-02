@@ -20,23 +20,27 @@ export const footerData = {
             links: [
                 {
                     text: "Journal",
-                    url: "#journal"
+                    url: "/#journal"
+                },
+                {
+                    text: "Game Tracking",
+                    url: "/#game-tracking"
                 },
                 {
                     text: "Analytics",
-                    url: "#analytics"
+                    url: "/#analytics"
                 },
                 {
                     text: "Equipment",
-                    url: "#equipment"
+                    url: "/#equipment"
                 },
                 {
                     text: "Expenses",
-                    url: "#expenses"
+                    url: "/#expenses"
                 },
                 {
                     text: "Resources",
-                    url: "#resources"
+                    url: "/#resources"
                 }
             ]
         },
@@ -45,15 +49,11 @@ export const footerData = {
             links: [
                 {
                     text: "FAQ",
-                    url: "#faq"
+                    url: "/#faq"
                 },
                 {
                     text: "Privacy Policy",
-                    url: "#"
-                },
-                {
-                    text: "Terms of Service",
-                    url: "#"
+                    url: "/privacy-policy"
                 }
             ]
         }
@@ -61,19 +61,27 @@ export const footerData = {
     socialLinks: [
         {
             platform: "facebook",
-            url: "https://facebook.com/pickleballjournal"
+            url: "https://www.facebook.com/pickleball.journal"
         },
         {
             platform: "instagram",
-            url: "https://instagram.com/pickleballjournal"
+            url: "https://www.instagram.com/pickleball.journal"
+        },
+        {
+            platform: "x",
+            url: "https://x.com/PickleballJourn"
         },
         {
             platform: "youtube",
-            url: "https://youtube.com/@pickleballjournal"
+            url: "https://youtube.com/@pickleballjournal_app"
         },
         {
             platform: "tiktok",
-            url: "https://tiktok.com/@pickleballjournal"
+            url: "https://www.tiktok.com/@pickleball.journal"
+        },
+        {
+            platform: "threads",
+            url: "https://www.threads.net/@pickleball.journal"
         }
     ] as SocialLink[]
 }

@@ -4,7 +4,7 @@ import { ctaData } from '@/data/cta'
 
 const AppStoreButton = ({ dark }: { dark?: boolean }) => {
     return (
-        <a href={ctaData.appStoreUrl || '#'}>
+        <div className="relative cursor-default">
             <button
                 type="button"
                 className={clsx("flex items-center justify-center min-w-[205px] mt-3 px-6 h-14 rounded-full w-full sm:w-fit", { "text-white bg-foreground": dark, "text-foreground bg-white": !dark })}
@@ -18,7 +18,12 @@ const AppStoreButton = ({ dark }: { dark?: boolean }) => {
                     <p className="text-xl font-semibold leading-tight">App Store</p>
                 </div>
             </button>
-        </a>
+            
+            {/* Coming Soon Banner */}
+            <div className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full transform rotate-12 shadow-lg">
+                COMING SOON
+            </div>
+        </div>
     )
 }
 

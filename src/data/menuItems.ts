@@ -6,26 +6,30 @@ interface MenuItem {
 export const menuItems: MenuItem[] = [
     {
         text: 'Journal',
-        url: '#journal'
+        url: '/#journal'
+    },
+    {
+        text: 'Game Tracking',
+        url: '/#game-tracking'
     },
     {
         text: 'Analytics',
-        url: '#analytics'
+        url: '/#analytics'
     },
     {
         text: 'Equipment',
-        url: '#equipment'
+        url: '/#equipment'
     },
     {
         text: 'Expenses',
-        url: '#expenses'
+        url: '/#expenses'
     },
     {
         text: 'Resources',
-        url: '#resources'
+        url: '/#resources'
     },
     {
         text: 'FAQ',
-        url: '#faq'
+        url: '/#faq'
     }
 ];

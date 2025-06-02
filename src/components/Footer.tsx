@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
             <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div>
                     <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="min-w-fit w-5 h-5 md:w-7 md:h-7" />
-                        <h3 className="manrope text-xl font-semibold cursor-pointer">
+                        <img src="/logo.png" alt="Pickleball Journal" className="w-6 h-6" />
+                        <h3 className="manrope text-xl font-semibold cursor-pointer" style={{color: '#1075BB'}}>
                             {siteDetails.siteName}
                         </h3>
                     </Link>
@@ -30,9 +30,9 @@ const Footer: React.FC = () => {
                                 <ul className="text-foreground-accent">
                                     {section.links?.map(link => (
                                         <li key={link.text} className="mb-2">
-                                            <Link href={link.url || '#'} className="hover:text-foreground">
+                                            <a href={link.url || '#'} className="hover:text-foreground">
                                                 {link.text}
-                                            </Link>
+                                            </a>
                                         </li>
                                     ))}
                                 </ul>
@@ -49,22 +49,24 @@ const Footer: React.FC = () => {
 
                     <div className="mt-5 flex items-center gap-4">
                         {footerData?.socialLinks?.map(({ platform, url }) => (
-                            <Link
+                            <a
                                 href={url || '#'}
                                 key={platform}
                                 aria-label={platform}
                                 className="text-foreground-accent hover:text-foreground"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 {getPlatformIconByName(platform)}
-                            </Link>
+                            </a>
                         ))}
                     </div>
                 </div>
             </div>
             <div className="mt-8 md:text-center text-foreground-accent px-6">
                 <p>Copyright &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.</p>
-                <p className="text-sm mt-2 text-gray-500">Made with &hearts; by <a href="https://nexilaunch.com" target="_blank">Nexi Launch</a></p>
-                <p className="text-sm mt-2 text-gray-500">UI kit by <a href="https://ui8.net/youthmind/products/fintech-finance-mobile-app-ui-kit" target="_blank">Youthmind</a></p>
+                {/* <p className="text-sm mt-2 text-gray-500">Made with &hearts; by <a href="https://nexilaunch.com" target="_blank">Nexi Launch</a></p>
+                <p className="text-sm mt-2 text-gray-500">UI kit by <a href="https://ui8.net/youthmind/products/fintech-finance-mobile-app-ui-kit" target="_blank">Youthmind</a></p> */}
             </div>
         </footer>
     );
