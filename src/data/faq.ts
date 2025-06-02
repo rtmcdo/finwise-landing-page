@@ -9,23 +9,15 @@ interface FAQ {
 export const faqs: FAQ[] = [
     {
         question: `Is ${siteDetails.siteName} secure?`,
-        answer: 'Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.',
+        answer: 'Yes, absolutely. As a native Apple app, Pickleball Journal leverages the robust security features built into your iOS device. We don\'t process payments or communicate with external sites, and all your data is protected by your device\'s own security systems. Your pickleball stats and information remain private and secure.',
     },
     {
         question: `Can I use ${siteDetails.siteName} on multiple devices?`,
-        answer: 'Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.',
-    },
-    {
-        question: 'Can I connect all my bank accounts?',
-        answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`
-    },
-    {
-        question: 'Do I need any financial expertise to use the investing features?',
-        answer: 'Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.',
+        answer: 'Not currently, but it is on our roadmap to support data sync across multiple devices. We\'re working on a cloud sync feature that will allow you to access your pickleball stats and journal entries from any iOS device.',
     },
     {
         question: 'What if I need help using the app?',
-        answer: 'Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.'
+        answer: 'Our support team is available via email at support@pickleballjournal.com. Additionally, the app includes helpful tutorials and tips to get you started, and we regularly update our knowledge base with common questions and solutions.'
     },
     {
         question: "How do I start tracking my games?",
@@ -42,9 +34,5 @@ export const faqs: FAQ[] = [
     {
         question: "What equipment details can I track?",
         answer: "You can track all your pickleball gear including paddles, shoes, balls, and accessories. For each item, you can log purchase dates, usage history, and retirement dates to help manage your equipment lifecycle."
-    },
-    {
-        question: "Can I share my stats with others?",
-        answer: "Yes! You can share your progress, achievements, and stats with friends or on social media. You can also connect with other players to track your games together."
     }
 ];

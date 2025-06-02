@@ -19,25 +19,33 @@ export const footerData = {
             title: 'Features',
             links: [
                 {
-                    text: "Journal Entries",
+                    text: "Journal",
                     url: "#journal"
                 },
                 {
-                    text: "Activity Analytics",
+                    text: "Analytics",
                     url: "#analytics"
                 },
                 {
-                    text: "Equipment Management",
+                    text: "Equipment",
                     url: "#equipment"
+                },
+                {
+                    text: "Expenses",
+                    url: "#expenses"
+                },
+                {
+                    text: "Resources",
+                    url: "#resources"
                 }
             ]
         },
         {
-            title: 'Resources',
+            title: 'Quick Links',
             links: [
                 {
-                    text: "Help Center",
-                    url: "#"
+                    text: "FAQ",
+                    url: "#faq"
                 },
                 {
                     text: "Privacy Policy",
@@ -52,12 +60,20 @@ export const footerData = {
     ] as FooterSection[],
     socialLinks: [
         {
-            platform: "twitter",
-            url: "https://twitter.com/pickleballjournal"
+            platform: "facebook",
+            url: "https://facebook.com/pickleballjournal"
         },
         {
             platform: "instagram",
             url: "https://instagram.com/pickleballjournal"
+        },
+        {
+            platform: "youtube",
+            url: "https://youtube.com/@pickleballjournal"
+        },
+        {
+            platform: "tiktok",
+            url: "https://tiktok.com/@pickleballjournal"
         }
     ] as SocialLink[]
 }

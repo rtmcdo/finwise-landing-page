@@ -2,8 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 
 import AppStoreButton from './AppStoreButton';
-import PlayStoreButton from './PlayStoreButton';
-
 import { heroDetails } from '@/data/hero';
 import spendingScreen from '../screenshots/phone-hero1.png';
 import watchScreen from '../screenshots/watch-hero-1.png';
@@ -25,10 +23,11 @@ const Hero: React.FC = () => {
             <div className="text-center">
                 <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
                 <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
+                
                 <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
                     <AppStoreButton dark />
-                    <PlayStoreButton dark />
                 </div>
+                
                 <div className="relative mt-12 md:mt-16 flex items-center justify-center gap-4 md:gap-8">
                     <div className="relative w-[300px] md:w-[384px] h-[400px] overflow-hidden">
                         <Image

@@ -3,21 +3,21 @@ import { siteDetails } from "./siteDetails";
 
 export const testimonials: ITestimonial[] = [
     {
-        name: 'John Smith',
-        role: 'CEO at Company',
-        message: `${siteDetails.siteName}'s AI-driven insights have transformed how we approach financial planning for our clients. It's an invaluable resource in the modern financial landscape.`,
+        name: 'Mike Rodriguez',
+        role: '4.5 Rated Player',
+        message: `${siteDetails.siteName} has completely transformed how I track my pickleball progress. After logging games for just 3 months, I identified weaknesses in my third-shot drop that I never noticed before.`,
         avatar: '/images/testimonial-1.webp',
     },
     {
-        name: 'Jane Doe',
-        role: 'CTO at Startup',
-        message: `As a CTO, I'm impressed by ${siteDetails.siteName}'s robust security measures and seamless integrations. It's rare to find an app that balances user-friendliness with such advanced technology.`,
+        name: 'Sarah Thompson',
+        role: 'Tournament Director',
+        message: `As someone who plays in multiple tournaments each month, ${siteDetails.siteName} has been a game-changer. I can track every match, see trends in my performance, and even monitor which paddles perform best in different conditions.`,
         avatar: '/images/testimonial-2.webp',
     },
     {
-        name: 'Emily Johnson',
-        role: 'Product Manager',
-        message: `${siteDetails.siteName} is revolutionizing personal finance management. Its intuitive design and powerful features make it an indispensable tool for anyone serious about financial growth.`,
+        name: 'David Chen',
+        role: 'Recreational Player',
+        message: `I started using ${siteDetails.siteName} as a beginner, and it's helped me improve faster than I expected. Being able to log my games and track my progress has kept me motivated, and the equipment tracking saved me from using a worn-out paddle for too long!`,
         avatar: '/images/testimonial-3.webp',
     },
 ];

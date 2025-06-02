@@ -10,6 +10,7 @@ import { IBenefit } from "@/types";
 interface Props {
     benefit: IBenefit;
     imageAtRight?: boolean;
+    id?: string;
 }
 
 const containerVariants: Variants = {
@@ -46,11 +47,11 @@ export const childVariants = {
     },
 };
 
-const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
+const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight, id }: Props) => {
     const { title, description, imageSrc, bullets } = benefit;
 
     return (
-        <section className="benefit-section">
+        <section id={id} className="benefit-section">
             <motion.div
                 className="flex flex-wrap flex-col items-center justify-center gap-2 lg:flex-row lg:gap-20 lg:flex-nowrap mb-24"
                 variants={containerVariants}

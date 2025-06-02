@@ -5,10 +5,6 @@ interface MenuItem {
 
 export const menuItems: MenuItem[] = [
     {
-        text: 'Features',
-        url: '#features'
-    },
-    {
         text: 'Journal',
         url: '#journal'
     },
@@ -21,7 +17,15 @@ export const menuItems: MenuItem[] = [
         url: '#equipment'
     },
     {
-        text: 'Get Started',
-        url: '#cta'
+        text: 'Expenses',
+        url: '#expenses'
+    },
+    {
+        text: 'Resources',
+        url: '#resources'
+    },
+    {
+        text: 'FAQ',
+        url: '#faq'
     }
 ];

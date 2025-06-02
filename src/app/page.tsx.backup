@@ -19,8 +19,8 @@ const HomePage: React.FC = () => {
 
         <Section
           id="testimonials"
-          title="Hear From Fellow Players"
-          description="Real pickleball enthusiasts sharing their experience with the app."
+          title="What Our Clients Say"
+          description="Hear from those who have partnered with us."
         >
           <Testimonials />
         </Section>
@@ -35,4 +35,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default HomePage; 

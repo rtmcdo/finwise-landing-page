@@ -1,4 +1,5 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaThreads, FaTwitter, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
 
 export const getPlatformIconByName = (platformName: string): JSX.Element | null => {
     switch (platformName) {
@@ -25,6 +26,9 @@ export const getPlatformIconByName = (platformName: string): JSX.Element | null 
         }
         case 'x': {
             return <FaXTwitter size={24} className='min-w-fit' />;
+        }
+        case 'tiktok': {
+            return <FaTiktok size={24} className='min-w-fit' />;
         }
         default:
             console.log('Platform name not supported, no icon is returned:', platformName);
